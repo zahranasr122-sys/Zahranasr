@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zahra Nasr — Product Analyst</title>
+<meta name="description" content="Product Analyst with a Product Owner background. Fintech and edtech, B2B and B2C.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F7F7; --ink:#182230; --muted:#5B6776; --line:#D5DDDF;
+  --teal:#137C86; --teal-dark:#0D5F67; --rose:#C2185B; --card:#FFFFFF;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+a{color:var(--teal-dark)}
+a:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{padding:20px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font:700 19px var(--head);color:var(--ink);text-decoration:none}
+nav a{margin-left:20px;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+h1{font:700 clamp(34px,5.2vw,58px)/1.08 var(--head);letter-spacing:-.02em;margin:0 0 22px}
+.lead{font-size:19px;color:var(--muted);max-width:52ch;margin:0 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--teal);transition:background .15s,color .15s}
+.btn.primary{background:var(--teal);color:#fff}
+.btn.primary:hover{background:var(--teal-dark);border-color:var(--teal-dark)}
+.btn.ghost{color:var(--teal-dark)}
+.btn.ghost:hover{background:var(--teal);color:#fff}
+.meta{margin-top:22px;color:var(--muted);font-size:15px}
+.portrait{margin:0;border-radius:6px 90px 6px 6px;overflow:hidden;border-bottom:6px solid var(--rose);background:#ddd}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font:700 30px/1.15 var(--head);letter-spacing:-.01em;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 32px;max-width:60ch}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:14px}
+summary{cursor:pointer;list-style:none;padding:20px 24px;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary h3{font:600 20px/1.3 var(--head);margin:0}
+summary span{color:var(--muted);font-size:15px;white-space:nowrap}
+summary::after{content:"+";font:500 26px/1 var(--head);color:var(--teal);margin-left:8px}
+details[open] summary::after{content:"\2212"}
+.case{padding:4px 24px 24px;display:grid;grid-template-columns:150px 1fr;gap:12px 24px}
+.case dt{font-weight:600}
+.case dd{margin:0}
+.case .todo{color:var(--rose)}
+.jobs{display:grid;gap:28px}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px}
+.job h3{font:600 19px var(--head);margin:0}
+.job p{margin:4px 0 0;color:var(--muted)}
+.job ul{margin:8px 0 0;padding-left:20px}
+.contact{background:var(--ink);color:#fff;border-top:0}
+.contact h2{color:#fff}
+.contact p{color:#C7D0DA;max-width:52ch}
+.contact .btn.primary{background:#fff;color:var(--ink);border-color:#fff}
+.contact .btn.ghost{color:#fff;border-color:#fff}
+.contact .btn.ghost:hover{background:#fff;color:var(--ink)}
+footer{padding:22px 0;color:var(--muted);font-size:14px}
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .portrait{max-width:340px}
+  .case,.job{grid-template-columns:1fr}
+  summary{flex-direction:column;gap:4px}
+  nav a:first-child{margin-left:0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Zahra Nasr</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <!-- SAMPLE HEADLINE: replace with your final line -->
+      <h1>Product Analyst who writes specs engineers can build and stakeholders can trust.</h1>
+      <p class="lead">I have two years as an analyst on the educational platform team at Datin, a fintech company serving B2B and B2C users, and two years as a Product Owner at a B2B marketplace startup.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:zahranasr122@gmail.com">Email me</a>
+        <a class="btn ghost" href="resume.pdf" download>Download résumé</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/zahranasr122/" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="meta">Based in Iran. Open to opportunities in Europe and Canada.</p>
+    </div>
+    <figure class="portrait"><img src="photo.jpg" alt="Portrait of Zahra Nasr" width="900" height="1125"></figure>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <p class="sub">Three examples of how I move from a vague problem to a clear, testable specification. Company names are shown; internal details are generalized.</p>
+
+    <details>
+      <summary><h3>Gift card charged but not delivered</h3><span>Case study, Datin</span></summary>
+      <dl class="case">
+        <dt>Problem</dt><dd>During high traffic, some customers were charged for a gift card without receiving it.</dd>
+        <dt>My role</dt><dd>Product analyst. I owned the diagnosis from data to recommendation.</dd>
+        <dt>Approach</dt><dd>I wrote SQL queries to find the affected transactions and read API logs to trace where the payment and delivery flows diverged.</dd>
+        <dt>Outcome</dt><dd class="todo">[Add: root cause, your recommendation, and the result if you have one.]</dd>
+      </dl>
+    </details>
+
+    <details>
+      <summary><h3>Prerequisite-based exam unlocking</h3><span>PRD, Datin learning platform</span></summary>
+      <dl class="case">
+        <dt>Problem</dt><dd>Learners could open any exam in any order, so instructors could not enforce a learning path.</dd>
+        <dt>My role</dt><dd>Analyst. I wrote the PRD and user stories for the admin, instructor and learner panels.</dd>
+        <dt>Approach</dt><dd>I defined the unlock rules, edge cases and each panel's behavior, and documented them so engineering and QA worked from one source.</dd>
+        <dt>Outcome</dt><dd class="todo">[Add: what shipped and what changed. Link the anonymized PRD.]</dd>
+      </dl>
+    </details>
+
+    <details>
+      <summary><h3>Decision log for the exam builder</h3><span>Documentation, Datin learning platform</span></summary>
+      <dl class="case">
+        <dt>Problem</dt><dd>Product decisions for the exam builder lived in chats and meetings, so the reasoning was hard to find later.</dd>
+        <dt>My role</dt><dd>Analyst. I created the decision log format and kept it current.</dd>
+        <dt>Approach</dt><dd>Each entry records the decision, the options considered, the reasoning and the impact on requirements.</dd>
+        <dt>Outcome</dt><dd class="todo">[Add: how the team uses it. Link an anonymized sample.]</dd>
+      </dl>
+    </details>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <p class="sub">Analysis and product ownership in fintech, edtech and marketplaces.</p>
+    <div class="jobs">
+      <div class="job">
+        <div><h3>Software Analyst</h3><p>Datin</p></div>
+        <div>
+          Educational platform team, fintech company with B2B and B2C products. About two years.
+          <ul>
+            <li>Write PRDs, user stories and requirements for the learning management system.</li>
+            <li>Keep decision logs and a prioritized backlog for sprint planning.</li>
+            <li>Specify integrations with external services.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div><h3>Product Owner</h3><p class="todo" style="color:var(--rose)">[Startup name]</p></div>
+        <div>
+          B2B marketplace startup. Two years.
+          <ul>
+            <li class="todo" style="color:var(--rose)">[Add two or three bullets: what you owned, and one result.]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>The fastest way to reach me is email. I reply within a couple of days.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:zahranasr122@gmail.com">zahranasr122@gmail.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/zahranasr122/" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="resume.pdf" download>Download résumé</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Zahra Nasr</div></footer>
+</body>
+</html>
