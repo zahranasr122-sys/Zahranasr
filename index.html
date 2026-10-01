@@ -23,14 +23,14 @@ a{color:var(--teal-dark)}
 a:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
 header{padding:20px 0;border-bottom:1px solid var(--line)}
-header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+header .wrap{display:flex;justify-content:flex-end;align-items:center;gap:16px;flex-wrap:wrap}
 .logo{font:700 19px var(--head);color:var(--ink);text-decoration:none}
 nav a{margin-left:20px;text-decoration:none;color:var(--muted);font-weight:500}
 nav a:hover{color:var(--ink)}
 .hero{padding:64px 0 72px}
 .hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
-h1{font:700 clamp(34px,5.2vw,58px)/1.08 var(--head);letter-spacing:-.02em;margin:0 0 32px}
-.lead{font-size:19px;color:var(--muted);max-width:52ch;margin:0 0 30px}
+h1{font:700 clamp(34px,5.2vw,58px)/1.08 var(--head);letter-spacing:-.02em;margin:0 0 14px}
+.lead{font-size:19px;color:var(--muted);max-width:44ch;margin:0 0 30px}
 .actions{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-block;padding:13px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--teal);transition:background .15s,color .15s}
 .btn.primary{background:var(--teal);color:#fff}
@@ -78,7 +78,6 @@ footer{padding:22px 0;color:var(--muted);font-size:14px}
 <body>
 <header>
   <div class="wrap">
-    <a class="logo" href="#top">Zahra Nasr</a>
     <nav aria-label="Main">
       <a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
     </nav>
@@ -89,8 +88,9 @@ footer{padding:22px 0;color:var(--muted);font-size:14px}
 <div class="hero">
   <div class="wrap">
     <div>
-      <!-- SAMPLE HEADLINE: replace with your final line -->
-      <h1>Product Analyst who writes specs engineers can build and stakeholders can trust.</h1>
+      <!-- SAMPLE TAGLINE: replace with your final line -->
+      <h1>Zahra Nasr</h1>
+      <p class="lead">Product Analyst who writes specs engineers can build and stakeholders can trust.</p>
       <div class="actions">
         <a class="btn primary" href="mailto:zahranasr122@gmail.com">Email me</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/zahranasr122/" rel="noopener">LinkedIn</a>
